@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ForLoops {
 
     /**
@@ -9,7 +11,12 @@ public class ForLoops {
      */
     public static String printingHashTags(int num) {
 
-        return ""; // update or remove this line. It is only there so the tests do not show an error.
+        String tags = "";
+
+        for (int i = 0; i < num; i++){
+            tags += "#";
+        }
+        return tags; // update or remove this line. It is only there so the tests do not show an error.
     }
 
     /**
@@ -21,8 +28,19 @@ public class ForLoops {
      * @return a countdown from the largest parameter to the smallest.
      */
     public static String countDown(int num1, int num2) {
+        String count = "";
+        if (num1 == num2)
+            return count += num1;
+        else if (num1>num2){
+            for(int i = num1; i>=num2; i--)
+                count += i +" ";
 
-        return ""; // update or remove this line. It is only there so the tests do not show an error.
+            }
+        else if (num1<num2){
+            for(int i = num2; i>=num1; i--)
+                count += i +" ";
+        }
+        return count; // update or remove this line. It is only there so the tests do not show an error.
     }
 
 
