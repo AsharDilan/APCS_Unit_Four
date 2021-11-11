@@ -1,6 +1,10 @@
 public class StringProblems {
 
     public static String addHyphens(String s) {
+        String word = "";
+        char letter1 = s.charAt(0);
+
+        for (char c = letter1; c )
 
         return "";
     }
