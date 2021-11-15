@@ -11,7 +11,6 @@ public class WhileLoops {
      * @return A string consisting of either the range of numbers or Invalid Input
      */
     public static String fromHereToThere(int num1, int num2) {
-
         return ""; // update or remove this line. It is only there so the tests do not show an error.
     }
 
